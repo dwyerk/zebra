@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'zebra'",
+            "name": "Debug executable 'assistant'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=zebra",
+                    "--bin=assistant",
                     "--package=zebra"
                 ],
                 "filter": {
-                    "name": "zebra",
+                    "name": "assistant",
                     "kind": "bin"
                 }
             },
@@ -25,16 +25,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'zebra'",
+            "name": "Debug unit tests in executable 'assistant'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=zebra",
+                    "--bin=assistant",
                     "--package=zebra"
                 ],
                 "filter": {
-                    "name": "zebra",
+                    "name": "assistant",
                     "kind": "bin"
                 }
             },
